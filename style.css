@@ -44,8 +44,31 @@ div.sidebard ul.settings{
 
 div.header {
     grid-area: 1 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
 }
 
+div.topheader{
+    grid-area: 1 / 1;
+    display: grid;
+    grid-template: 1fr / repeat(9, 1fr);
+}
+
+div.bottomheader{
+    grid-area: 2/1;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+
+div.bottomheader div.new{
+    grid-area: 1/7;
+}
+div.bottomheader div.upload{
+    grid-area: 1/8;
+}
+div.bottomheader div.share{
+    grid-area: 1/9;
+}
 div.content {
     grid-area: 2 / 2;
 }
