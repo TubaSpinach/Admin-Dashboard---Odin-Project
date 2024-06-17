@@ -1,0 +1,21 @@
+* {
+    outline: 1px solid red;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+div.sidebar {
+    grid-area: 1 / 1 / 6 / 1;
+}
+
+div.header {
+    grid-area: 1 / 2;
+}
+
+div.content {
+    grid-area: 2 / 2;
+}
